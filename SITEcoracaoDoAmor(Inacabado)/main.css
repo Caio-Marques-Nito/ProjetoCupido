@@ -1,0 +1,56 @@
+body{
+    background-color: pink;
+    margin: 1rem;
+    text-align: center;
+}
+
+#titulo{
+    border: 4px black solid;
+    border-bottom: rgba(155, 37, 37, 0.911);
+    font-size: 4rem;
+}
+#msg{
+    border: 4px black solid;
+    border-top: 2px rgba(155, 37, 37, 0.911);
+    font-size: 20px;
+}
+
+.Corletras{
+    color: white;
+    background-color: rgba(155, 37, 37, 0.911);
+}
+
+#imagem{
+    margin-top: 4rem;
+    width: 175px;
+}
+
+#percent{
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  padding: 10px;
+  pointer-events: none;
+}
+
+#imagem{
+    transition: transform 0.5s ease-in-out;
+  }
+  
+#imagem:hover{
+    transform: scale(1.2);
+  }
+
+#recadoamor{
+    margin-top: 40px;
+    border: 4px black solid;
+    color: white;
+    font-size: 27px;
+    background-color: tomato;
+}
+  

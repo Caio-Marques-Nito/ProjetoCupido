@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>joguinho do amor</title>
+      
+</head>
+<body>
+    <div id="titulo" class="Corletras">Site do Amor</div>
+    <div id="msg" class="Corletras">Coloque dois nomes para saber sua % de amor</div>
+
+    <div id="entrada">
+        <img id="imagem" src="https://i.pinimg.com/originals/27/42/95/274295614b1f1971b08ab25420222b6a.png" onclick="mudarTexto()">
+        <div id="percent"></div>
+    </div>
+
+    <div id="recadoamor"></div>
+      
+    <script>
+        function mudarTexto()
+        {
+        var min = 1;
+        var max = 100;
+        var porcentagem = Math.floor(Math.random() * (max - min + 1)) + min;
+        document.getElementById("percent").innerHTML = porcentagem + "%";
+
+        if(porcentagem <= 20)
+            document.getElementById("recadoamor").innerHTML = "Te odeia";
+        else if(porcentagem <= 40)
+            document.getElementById("recadoamor").innerHTML = "Te conhece";
+        else if(porcentagem <= 60)
+            document.getElementById("recadoamor").innerHTML = "Gosta de você";
+        else if(porcentagem <= 80)
+            document.getElementById("recadoamor").innerHTML = "Gosta Muito de você";
+        else if(porcentagem <= 100)
+            document.getElementById("recadoamor").innerHTML = "Te ama";
+        }
+    </script>
+</body>
+</html>
